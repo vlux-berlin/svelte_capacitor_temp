@@ -7,13 +7,16 @@
     "build:routify": "routify",
     "#Platform: Build": "These build the application for their specific platforms",
     "build:android": "run-s build:app cap-run:android",
+    "build:electron": "run-s build:app cap-run:electron",
     "build:ios": "run-s build:app cap-run:ios",
     "#Platform: Sync": "These build the application for their specific platforms",
     "cap-run:android": "cap sync android && cap open android",
+    "cap-run:electron": "cap sync electron && cap open electron",
     "cap-run:ios": "cap sync ios && cap open ios",
     "#Dev: Platform": "These enable HMR (Hot module reloading) directly on the device - please check the readme.md for more on this.",
     "dev:ios": "run-p dev:start cap-run:ios",
     "dev:android": "run-p dev:start cap-run:android",
+    "dev:electron": "run-p dev:start cap-run:electron",
     "#Dev: Core": "These allow the code to be developed with HMR",
     "dev:preview": "vite preview",
     "dev:start": "run-p build:routify dev:vite",
@@ -44,6 +47,7 @@
     "babel-loader": "^8.2.2",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.6",
+    "electron-packager": "^15.3.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
     "eslint-plugin-import": "^2.24.2",
@@ -68,6 +72,9 @@
     "@capacitor/android": "^3.2.0",
     "@capacitor/cli": "^3.2.0",
     "@capacitor/core": "^3.0.0",
-    "@capacitor/ios": "^3.0.1"
+    "@capacitor/electron": "^2.4.9",
+    "@capacitor/ios": "^3.0.1",
+    "electron": "^13.2.3",
+    "ngx-electron": "^2.2.0"
   }
 }
