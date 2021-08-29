@@ -1,4 +1,4 @@
-![](/assets/svelte_cap.png)
+![](/src/assets/svelte_cap.png)
 
 # Svelte + Capacitor (w/ live reload) Template
 

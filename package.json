@@ -36,7 +36,7 @@
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.3.7",
-    "@storybook/addon-notes": "^5.3.21",
+    "@storybook/addon-notes": "^4.1.18",
     "@storybook/addon-storysource": "^6.3.7",
     "@storybook/addon-svelte-csf": "^1.0.0",
     "@storybook/addon-viewport": "^6.3.7",
@@ -75,6 +75,8 @@
     "@capacitor/electron": "^2.4.9",
     "@capacitor/ios": "^3.0.1",
     "electron": "^13.2.3",
-    "ngx-electron": "^2.2.0"
+    "firebase": "^7.10.0",
+    "ngx-electron": "^2.2.0",
+    "sveltefire": "^0.1.5"
   }
 }

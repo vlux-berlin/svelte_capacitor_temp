@@ -8,12 +8,14 @@ const preprocess = require('svelte-preprocess');
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svelte({preprocess: preprocess()})],
-  publicDir: './assets/',
+  publicDir: './src/assets/',
   build: {
     outDir: './public/'
   },
   resolve: {
     alias: aliases
   },
-  optimizeDeps: {exclude: ['@roxi/routify', '@urql/svelte']}
+  optimizeDeps: {
+    exclude: ['@roxi/routify', '@urql/svelte']
+  }
 });
