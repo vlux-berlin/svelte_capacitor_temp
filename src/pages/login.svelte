@@ -15,4 +15,7 @@
 </script>
 
 <em>{$authStore.user.uid}</em>
-<button on:click={loginWithGoogle}> Sign In Anonymously </button>
+<button on:click={loginWithGoogle}>google</button>
+<button on:click={firebase.auth().signInAnonymously()}>
+  Sign In Anonymously
+</button>

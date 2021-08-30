@@ -22,12 +22,14 @@
   });
 </script>
 
-<FirebaseApp {firebase}>
-  <User let:auth let:user>
-    <button on:click={() => console.log($authStore.user.uid)}>test</button>
-    <Router {routes} />
-  </User>
-</FirebaseApp>
+<main>
+  <FirebaseApp {firebase}>
+    <User let:auth let:user>
+      <button on:click={() => console.log($authStore.user.uid)}>test</button>
+      <Router {routes} />
+    </User>
+  </FirebaseApp>
+</main>
 
 <style @global>
 </style>
